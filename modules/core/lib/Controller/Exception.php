@@ -66,15 +66,15 @@ class Exception
         $state = Auth\State::loadState($stateId, 'core:cardinality');
 
         Logger::stats(
-            'core:cardinality:error '.$state['Destination']['entityid'].' '.$state['saml:sp:IdP'].
-            ' '.implode(',', array_keys($state['core:cardinality:errorAttributes']))
+            'core:cardinality:error ' . $state['Destination']['entityid'] . ' ' . $state['saml:sp:IdP'] .
+            ' ' . implode(',', array_keys($state['core:cardinality:errorAttributes']))
         );
 
         $t = new Template($this->config, 'core:cardinality_error.twig');
         $t->data['cardinalityErrorAttributes'] = $state['core:cardinality:errorAttributes'];
         if (isset($state['Source']['auth'])) {
             $t->data['LogoutURL'] = Module::getModuleURL(
-                'core/login/'.urlencode($state['Source']['auth'])
+                'core/login/' . urlencode($state['Source']['auth'])
             );
         }
 

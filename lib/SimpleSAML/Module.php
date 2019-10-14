@@ -568,7 +568,7 @@ class Module
     public static function addTrailingSlash(Request $request)
     {
         // Must be of form /{module} - append a slash
-        return new RedirectResponse($request->getRequestUri().'/', 308);
+        return new RedirectResponse($request->getRequestUri() . '/', 308);
     }
 
 
