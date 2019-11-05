@@ -24,7 +24,6 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class TestController
 {
-
     /** @var \SimpleSAML\Configuration */
     protected $config;
 
@@ -119,6 +118,8 @@ class TestController
     {
         $translator = $t->getTranslator();
         $result = '';
+
+        /** @psalm-suppress TypeDoesNotContainNull  Remove if-case in 2.0 */
         if ($nameId->getValue() === null) {
             $list = ["NameID" => [$translator->t('{status:subject_notset}')]];
             /** @var string $notset */
