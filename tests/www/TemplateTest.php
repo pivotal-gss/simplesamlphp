@@ -34,6 +34,7 @@ class TemplateTest extends TestCase
         foreach ($files as $file) {
             if (preg_match('/.twig$/', $file)) {
                 $t = new Template($config, $file);
+                $t->disableStrictVariables();
                 ob_start();
                 try {
                     $t->show();
@@ -53,6 +54,7 @@ class TemplateTest extends TestCase
                 foreach ($files as $file) {
                     if (preg_match('/.twig$/', $file)) {
                         $t = new Template($config, $module . ':' . $file);
+                        $t->disableStrictVariables();
                         ob_start();
                         try {
                             $t->show();
