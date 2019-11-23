@@ -1,0 +1,22 @@
+  
+{
+    "ADMIN_EMAIL": "admin@localhost",
+    "HTTPD_MODULES_STRIP": true,
+    "HTTPD_STRIP": true,
+    "NGINX_STRIP": true,
+    "PHP_EXTENSIONS": [
+        "bz2",
+        "zlib",
+        "curl",
+        "mcrypt"
+    ],
+    "PHP_MODULES": [],
+    "PHP_MODULES_STRIP": true,
+    "PHP_STRIP": true,
+    "PHP_VM": "php",
+    "STACK": "xeniel",
+    "WEBDIR": "www",
+    "WEB_SERVER": "httpd",
+    "ZEND_EXTENSIONS": [],
+    "COMPOSER_VENDOR_DIR": "vendor"
+}
