@@ -1,7 +1,7 @@
 /log/
-/config/
-/metadata/
-/cert/
+# /config/
+# /metadata/
+# /cert/
 /www/assets/fonts/*
 /www/assets/js/*.js
 /www/assets/js/*.map

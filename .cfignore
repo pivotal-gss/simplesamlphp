@@ -1,8 +1,7 @@
 bin
 docs
 tests
-templates
 metadata-templates
 config-templates
 locales
-*.MD
+*.md
