@@ -14,8 +14,8 @@ This is used for to test SAML authentication with Ops Manager, Bosh Director, PA
 # Preconfigured Users
 simplesamlphp Admin login: admin / password
 
-IDP Admin User login: admin1 / password and admin2 / password [ mapped to pcfadmins group [config/authsources.php](config/authsources.php) ]<br>
-IDP User login: user1 / password, user2 / password [ mapped to pcfusers group see [config/authsources.php](config/authsources.php)]
+IDP Admin User login: admin1 / password and admin2 / password [ mapped to 'opsmanadmin', 'pasadmin', 'pksadmin' groups [config/authsources.php](config/authsources.php) ]<br>
+IDP User login: user1 / password, user2 / password [ mapped to 'opsmanuser', 'pasuser', 'pksuser' groups see [config/authsources.php](config/authsources.php)]
 
 
 # Deployment 
@@ -115,11 +115,5 @@ uaac group map --name pks.clusters.manage pksadmin --origin simplesamlphp
 
 pks login -a <PKS_API> --sso-auto --skip-ssl-verification
 You will now be taken to your browser for authentication
-Authentication will be cancelled in 120 seconds
-Handling callback from a provider
-Exchanging a code with a token
-Shutting down server...
-API Endpoint:  <PKS_API>
-User: admin1@test.org
-Login successful.
+...
 ```
