@@ -108,6 +108,18 @@ $config = [
             'emailAddress' => 'admin2@test.org',
             'groups' => ['opsmanadmin', 'pasadmin', 'pksadmin'],
         ],
+
+        'user1:password' => [
+            'uid' => 'user1',
+            'emailAddress' => 'user1@test.org',
+            'groups' => ['opsmanuser', 'pasuser', 'pksuser'],
+        ],
+
+        'user2:password' => [
+            'uid' => 'user2',
+            'emailAddress' => 'user2@test.org',
+            'groups' => ['opsmanuser', 'pasuser', 'pksuser'],
+        ],
    ],
     
     /*

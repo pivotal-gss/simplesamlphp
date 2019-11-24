@@ -1111,7 +1111,7 @@ $config = [
      * Metadata signing can also be enabled for a individual SP or IdP by setting the
      * same option in the metadata for the SP or IdP.
      */
-    'metadata.sign.enable' => false,
+    'metadata.sign.enable' => true,
 
     /*
      * The default key & certificate which should be used to sign generated metadata. These
@@ -1123,10 +1123,11 @@ $config = [
      * the 'certificate' and 'privatekey' option in the metadata will be used.
      * if those aren't set, signing of metadata will fail.
      */
-    'metadata.sign.privatekey' => "server.key",
+    'metadata.sign.privatekey' => "server.pem",
     'metadata.sign.privatekey_pass' => null,
     'metadata.sign.certificate' => "server.crt",
-    'metadata.sign.algorithm' => null,
+    // remove 'metadata.sign.algorithm', default one will be picked up
+    // 'metadata.sign.algorithm' => null,
 
 
     /****************************
