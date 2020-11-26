@@ -54,6 +54,14 @@ $metadata['<PKSAPI_FQDN>:8443'] = [
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 ];
+
+# SSO for Apps 
+$metadata['http://<SSO_FQDN>'] = [
+    'AssertionConsumerService' => 'https://<SSO_FQDN>/saml/SSO/alias/<SSO_FQDN>',
+    'SingleLogoutService' => 'https://<SSO_FQDN>/saml/SingleLogout/alias/<SSO_FQDN>',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+];
 ```
 
 Important NOTE: PAS tile hard codes the entityid with http instead of https and this causes some issues with simplesamlphp. This commit 7c467ce5e065651f4d57423dcd08f64fa883a721 works around the problem but the SP metadata need to have http to match the IDP metatdata with the UAA.
