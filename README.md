@@ -125,3 +125,6 @@ pks login -a <PKS_API> --sso-auto --skip-ssl-verification
 You will now be taken to your browser for authentication
 ...
 ```
+
+# Configuration for SSO
+Please refer to [doc](https://confluence.eng.vmware.com/pages/viewpage.action?pageId=743635963)
