@@ -99,26 +99,30 @@ $config = [
 
         'admin1:password' => [
             'uid' => 'admin1',
-            'emailAddress' => 'admin1@test.org',
-            'groups' => ['opsmanadmin', 'pasadmin', 'pksadmin'],
+            'email' => 'admin1@test.org',
+            'given_name' => 'admin1',
+            'groups' => ['opsmanadmin', 'pasadmin', 'pksadmin', 'ssouser'],
         ],
 
         'admin2:password' => [
             'uid' => 'admin2',
-            'emailAddress' => 'admin2@test.org',
-            'groups' => ['opsmanadmin', 'pasadmin', 'pksadmin'],
+            'email' => 'admin2@test.org',
+            'given_name' => 'admin2',            
+            'groups' => ['opsmanadmin', 'pasadmin', 'pksadmin', 'ssouser'],
         ],
 
         'user1:password' => [
             'uid' => 'user1',
-            'emailAddress' => 'user1@test.org',
-            'groups' => ['opsmanuser', 'pasuser', 'pksuser'],
+            'email' => 'user1@test.org',
+            'given_name' => 'user1',            
+            'groups' => ['opsmanuser', 'pasuser', 'pksuser', 'ssouser'],
         ],
 
         'user2:password' => [
             'uid' => 'user2',
-            'emailAddress' => 'user2@test.org',
-            'groups' => ['opsmanuser', 'pasuser', 'pksuser'],
+            'given_name' => 'user2',            
+            'email' => 'user2@test.org',
+            'groups' => ['opsmanuser', 'pasuser', 'pksuser', 'ssouser'],
         ],
    ],
     

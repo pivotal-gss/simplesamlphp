@@ -39,9 +39,9 @@ $metadata['<PKSAPI_FQDN>:8443'] = [
 ];
 
 # SSO for Apps 
-$metadata['http://<SSO_FQDN>'] = [
-    'AssertionConsumerService' => 'https://<SSO_FQDN>/saml/SSO/alias/<SSO_FQDN>',
-    'SingleLogoutService' => 'https://<SSO_FQDN>/saml/SingleLogout/alias/<SSO_FQDN>',
+$metadata['http://sso-saml.login.run-06.slot-59.pez.vmware.com'] = [
+    'AssertionConsumerService' => 'https://sso-saml.login.run-06.slot-59.pez.vmware.com/saml/SSO/alias/sso-saml.login.run-06.slot-59.pez.vmware.com',
+    'SingleLogoutService' => 'https://sso-saml.login.run-06.slot-59.pez.vmware.com/saml/SingleLogout/alias/sso-saml.login.run-06.slot-59.pez.vmware.com',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 ];

@@ -1,6 +1,6 @@
 ---
 applications:
-- name: simplesamlphp
+- name: sso-saml-provider
   memory: 128M
   instances: 1
   path: .
